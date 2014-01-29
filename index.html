@@ -90,10 +90,11 @@
 
 <script>
 $(document).ready(function(){
-  var $content = $(".content").hide();
+  $(".content").hide();
   $(".toggle").on("click", function(e){
-    $(this).toggleClass("expanded");
-    $content.slideToggle();
+    $(e.target).prev('.content').slideToggle();
+    $(e.target).toggleClass("expanded");
+    return false; // prevent going to anchor
   });
 });
 
