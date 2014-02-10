@@ -14,7 +14,22 @@
 }
 
 
+ul, li{
+    list-style:none;
+    list-style-type:none;
+}
 
+
+nav {
+	position: fixed;
+	left: 0px;
+	top: 20%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 18px; 
+	color: #FF0077;
+	text-decoration: none;
+}
 
 .mywork{
 	width: 850px;
@@ -38,8 +53,8 @@ p{
 	font-size: 18px;
 }
 
-a:link {color:#62bd55;text-decoration:none;}      /* unvisited link */
-a:visited {color:#62bd55;text-decoration:none;}  /* visited link */
-a:hover {color:#62bd55;text-decoration:none;}  /* mouse over link */
-a:active {color:#62bd55;text-decoration:none;}  /* selected link */ 
+a:link {color:#DDD;text-decoration:none;}  /* unvisited link */
+a:visited {color:#DDD;text-decoration:none;}  /* visited link */
+a:hover {color:#DDD;text-decoration:none;}  /* mouse over link */
+a:active {color:#FF0077;text-decoration:none;}  /* selected link */ 
 
