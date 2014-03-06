@@ -14,26 +14,24 @@
 }
 
 
-ul, li{
-    list-style:none;
-    list-style-type:none;
-}
 
 
-nav {
-	position: fixed;
-	left: 0px;
-	top: 20%;
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow-y: scroll;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	line-height: 18px; 
-	color: #FF0077;
-	text-decoration: none;
+	font-size: 14px;
 }
 
-.mywork{
-	width: 850px;
-	margin:0 auto;
+header {
+	margin: 0 0 0 0;
+}
+
+img {
+    max-width: 100%;
+	height: auto;
 }
 
 p{
@@ -46,6 +44,7 @@ p{
 .plarge{
 	font-size: 21px;
 	line-height: 8px;
+	color: #FFF;
 }
 
 .psub{
@@ -53,8 +52,111 @@ p{
 	font-size: 18px;
 }
 
-a:link {color:#DDD;text-decoration:none;}  /* unvisited link */
-a:visited {color:#DDD;text-decoration:none;}  /* visited link */
-a:hover {color:#DDD;text-decoration:none;}  /* mouse over link */
+
+
+
+
+
+a:link {color:#FFF;text-decoration:none;}  /* unvisited link */
+a:visited {color:#FFF;text-decoration:none;}  /* visited link */
+a:hover {color:#FFF;text-decoration:none;}  /* mouse over link */
 a:active {color:#FF0077;text-decoration:none;}  /* selected link */ 
 
+a.pname:link { 
+	position: fixed;
+	top: 5px;
+	margin-left: 45px;
+	right: 6%;
+	text-align: right;
+	font-family: "Helvetica-Condensed", Helvetica, Arial, sans-serif;
+	font-weight: 800;
+	font-size: 24px; 
+	color: #FFF;
+	text-decoration:none;
+	z-index: 101;
+
+}
+
+a.pname:active {color:#FF0077;text-decoration:none;}
+
+
+
+
+
+
+.mywork{
+	width: 850px;
+	margin:0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
+#nav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	margin:0 0 0 0;
+	background-color: #000;
+}
+
+#nav_wrapper {
+	width: 100%;
+	margin: 0 0 0 1%;
+	text-align: left;
+	z-index: 101;
+}
+
+#nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 0 5px;
+	position: relative;
+}
+
+#nav ul li {
+	display: inline-block;
+}
+
+#nav ul li:hover {
+	background-color: #333;
+
+}
+
+#nav ul li a,visited {
+	color: #ccc;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+#nav ul li a:hover {
+	color: #ccc;
+	text-decoration: none;
+}
+
+#nav ul li:hover ul{
+	display: block;
+}
+
+#nav ul ul {
+	display: none;
+	position: absolute;
+	background-color: #333;
+	border: 5px solid #000;
+	border-top: 0;
+	margin-left: -5px;
+	min-width: 100px;
+
+}
+
+#nav ul ul li {
+	display: block;
+}
+
+#nav ul ul li a.visited {
+	color: #ccc;
+}
+#nav ul ul li a:hover {
+	color: #F09;
+}
