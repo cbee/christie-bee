@@ -38,7 +38,7 @@ p{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 16px; 
-	color: #DDD;
+	color: #000;
 }
 
 .plarge{
@@ -51,7 +51,15 @@ p{
 	font-family: 'Dosis', sans-serif;
 	font-size: 18px;
 }
-
+.linkbox{
+	background-color: #ff0099;
+	width: auto;
+	height: 20px;
+	text-align: center;
+}
+.center{
+	text-align: center;
+}
 
 
 
@@ -77,8 +85,9 @@ a.pname:link {
 
 }
 
-a.pname:active {color:#FF0077;text-decoration:none;}
+a.pname:active {color:#ff0099;text-decoration:none;}
 
+a.linkbox:link {color:#ff0099;text-decoration:none;}
 
 
 
@@ -158,5 +167,5 @@ a.pname:active {color:#FF0077;text-decoration:none;}
 	color: #ccc;
 }
 #nav ul ul li a:hover {
-	color: #F09;
+	color: #ff0099;
 }
